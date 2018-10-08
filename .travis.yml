@@ -10,4 +10,4 @@ addons:
         token:
             secure: travis encrypt fb9494fcdb69e66c9e6a444e799f98b91de36de3
     script:
-        - sonar-scanner
+        - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
