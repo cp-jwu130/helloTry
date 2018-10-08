@@ -8,6 +8,6 @@ addons:
     sonarcloud:
         organization: "cp-jwu130-github"
         token:
-            secure: fb9494fcdb69e66c9e6a444e799f98b91de36de3
+            secure: SONAR_TOKEN
     script:
         - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
