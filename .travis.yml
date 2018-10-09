@@ -2,12 +2,11 @@ language: java
 jdk:
     - oraclejdk8
 
-script: ant build
-
 addons:
     sonarcloud:
         organization: "cp-jwu130-github"
         token:
             secure: travis encrypt "04ff15231c7529ddc3021b6ae4ffc5cdc107b7f9"
-    script:
-        - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+script:
+    ant build
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
