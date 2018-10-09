@@ -6,7 +6,7 @@ script: ant build
 
 addons:
     sonarcloud:
-        organization: "cp-jwu130-github"
+        organization: cp-jwu130-github
         token:
             secure: SONAR_KEY
     script:
